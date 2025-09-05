@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>RESETEA TUS INSEGURIDADES</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fce4ec;
+            margin: 0;
+            padding: 0;
+        }
+
+        .titulo {
+            text-align: center;
+            font-size: 2rem;
+            margin: 40px 0 20px;
+        }
+
+        .actividad-contenedor {
+            display: flex;
+            gap: 30px;
+            max-width: 100%;
+            padding: 0 5vw;
+            margin: auto;
+            align-items: flex-start;
+            box-sizing: border-box;
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+            min-height: 400px;
+            background: transparent;
+            flex-shrink: 0;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .carousel img {
+            width: 100%;
+            flex-shrink: 0;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 2rem;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1;
+            user-select: none;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .descripcion-actividad {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        @media (max-width: 800px) {
+            .actividad-contenedor {
+                flex-direction: column;
+                align-items: center;
+                padding: 0 20px;
+            }
+
+            .carousel-container {
+                width: 100%;
+                min-height: auto;
+            }
+
+            .descripcion-actividad {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Barra de navegación superior -->
+   
+   <div class="navbar navbar-expand-lg navbar-light py-3 py-lg-0 px-lg-5" style="background-color: #FFF2E2;">
+        <div class="navbar-nav m-auto py-0">
+            <a href="index.html" class="nav-item nav-link">INICIO</a>
+            <a href="actividades.html" class="nav-item nav-link active">ACTIVIDADES</a>
+            <a href="tu verdad en incognito.html" class="nav-item nav-link">TU VERDAD EN INCÓGNITO</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">VIDEO TUTORIALES</a>
+                <div class="dropdown-menu rounded-0 m-0">
+                    <a href="hablemos mas sobre amor propio.html" class="dropdown-item">HABLEMOS MAS SOBRE EL AMOR PROPIO</a>
+                    <a href="podcast.html" class="dropdown-item">PODCAST</a>
+                    <a href="entrevistas.html" class="dropdown-item ">ENTREVISTAS</a>
+                </div>
+            </div>
+            <a href="sobre nosotras.html" class="nav-item nav-link">SOBRE NOSOTRAS</a>
+        </div>
+    </div>
+
+    <!-- Navbar principal -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-light py-3 py-lg-0 px-lg-5" style="background-color: #FFF2E2;">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 text-primary"><span class="text-dark">RESETEA</span> TUS INSEGURIDADES</h1>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Título y carrusel -->
+    <h2 class="titulo">Informate sobre el amor propio</h2>
+
+    <div class="actividad-contenedor">
+        <div class="carousel-container">
+            <button class="prev">&#10094;</button>
+
+            <div class="carousel" id="carousel">
+                <img src="img/entrevista.jpeg" alt="Actividad Espejo" />
+                <img src="img/entrevista2.jpeg" alt="Grupo" />
+                <img src="img/psicorientadora.jpeg" alt="Detalle" />
+                <img src="img/psicorientadoraa.jpeg" alt="Niñas" />
+            </div>
+
+            <button class="next">&#10095;</button>
+        </div>
+
+        <div class="descripcion-actividad">
+            <h3>Encuentro con la psicoorientadora</h3>
+            <p>
+                Esta actividad tiene como objetivo invitar a las participantes a reflexionar sobre el amor propio como base fundamental del bienestar emocional. A través de dinámicas de autoexploración, expresión creativa y diálogo grupal, se busca que cada mujer reconozca sus fortalezas, valores y capacidades, derribando estereotipos y promoviendo una relación más compasiva consigo misma.
+El espacio está diseñado para generar confianza, respeto y conexión entre mujeres que desean fortalecer su autoestima y recordar que merecen amor, cuidado y admiración, empezando por ellas mismas.
+            </p>
+            <p>
+                Las imágenes muestran momentos importantes de la actividad: el lugar donde grabamos nuestra entrevista, nuestras dos compañeras que acompañaron a Luz Stella y le realizaron las preguntas para entar en el tema.
+            </p>
+        </div>
+    </div>
+
+    <!-- Carrusel JS -->
+    <script>
+        function initCarousel() {
+            const carousel = document.getElementById('carousel');
+            const images = carousel.querySelectorAll('img');
+
+            const carouselContainer = carousel.parentElement;
+            const prevBtn = carouselContainer.querySelector('.prev');
+            const nextBtn = carouselContainer.querySelector('.next');
+
+            let currentIndex = 0;
+            let autoSlideInterval;
+
+            function updateCarousel() {
+                const width = carousel.clientWidth;
+                carousel.style.transform = `translateX(-${currentIndex * width}px)`;
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % images.length;
+                updateCarousel();
+            }
+
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                updateCarousel();
+            }
+
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(nextSlide, 4000);
+            }
+
+            function resetAutoSlide() {
+                clearInterval(autoSlideInterval);
+                startAutoSlide();
+            }
+
+            nextBtn.addEventListener('click', () => {
+                nextSlide();
+                resetAutoSlide();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                prevSlide();
+                resetAutoSlide();
+            });
+
+            window.addEventListener('resize', updateCarousel);
+
+            updateCarousel();
+            startAutoSlide();
+        }
+
+        window.addEventListener('load', initCarousel);
+    </script>
+
+
+<!-- Título y segundo carrusel -->
+<h2 class="titulo">Dia de la mujer</h2>
+
+<div class="actividad-contenedor">
+    <div class="carousel-container">
+        <button class="prev">&#10094;</button>
+
+        <div class="carousel" id="carousel2">
+            <img src="img/ACTIVIDAD _ESPEJO_.jpeg" alt="Nueva Entrevista 1" />
+            <img src="img/ACTIVIDAD DIA DE LA MUER.jpeg" alt="Nueva Entrevista 2" />
+            <img src="img/DETALLE.jpeg" alt="Nueva Entrevista 3" />
+            <img src="img/DIAPOSITIVAS.jpeg" alt="Nueva Entrevista 4" />
+              <img src="img/ENTREGA DE DETALLE.jpeg" alt="Nueva Entrevista 5" />
+            <img src="img/EVIDENCIA.jpeg" alt="Nueva Entrevista 6" />
+        </div>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <div class="descripcion-actividad">
+        <h3>Un camino hacia el amor propio</h3>
+        <p>
+          En el marco de la conmemoración del Día de la Mujer, junto a la psicologa Andreina Saavedra, realizamos una conferencia que se convirtió en un espacio de reflexión y crecimiento personal. A través de diferentes actividades trabajamos el amor propio y la autoestima, recordando que ambos son pilares fundamentales para reconocer nuestro valor y fortalecer nuestra identidad.
+
+Cada dinámica nos invitó a mirarnos con empatía, a valorar nuestras capacidades y a entender que amarnos no significa ser perfectas, sino aceptarnos y priorizarnos con respeto y dignidad. Más allá de celebrar una fecha, fue una oportunidad para compartir, escucharnos y reafirmar la fuerza que cada mujer lleva dentro.
+
+        </p>
+
+
+
+        <p>
+            Las imágenes reflejan su participación, la interacción con el grupo y los momentos en los que compartimos reflexiones muy valiosas para nuestro crecimiento personal. Además, se realizó una entrega de detalles a todas las niñas, como muestra de cariño y reconocimiento por su presencia y entusiasmo durante la actividad.
+        </p>
+    </div>
+</div>
+
+<!-- Script del segundo carrusel -->
+<script>
+    function initCarousel2() {
+        const carousel = document.getElementById('carousel2');
+        const images = carousel.querySelectorAll('img');
+
+        const carouselContainer = carousel.parentElement;
+        const prevBtn = carouselContainer.querySelector('.prev');
+        const nextBtn = carouselContainer.querySelector('.next');
+
+        let currentIndex = 0;
+        let autoSlideInterval;
+
+        function updateCarousel() {
+            const width = carousel.clientWidth;
+            carousel.style.transform = `translateX(-${currentIndex * width}px)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateCarousel();
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 4000);
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
+
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            resetAutoSlide();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            resetAutoSlide();
+        });
+
+        window.addEventListener('resize', updateCarousel);
+
+        updateCarousel();
+        startAutoSlide();
+    }
+
+    window.addEventListener('load', initCarousel2);
+</script>
+
+
+<!-- Título y tercer carrusel -->
+<h2 class="titulo">Palabras con magia</h2>
+
+<div class="actividad-contenedor">
+    <div class="carousel-container">
+        <button class="prev">&#10094;</button>
+
+        <div class="carousel" id="carousel3">
+            <img src="img/caja.jpeg" alt="Caja Mágica 1" />
+            <img src="img/cajaa.jpeg" alt="Actividad Reflexión 2" />
+            <img src="img/cajaaa.jpeg" alt="Grupo 11 3" />
+            <img src="img/cajaaaa.jpeg" alt="Compartiendo 4" />
+            <img src="img/cajaaaaa.jpeg" alt="Momentos 5" />
+            <img src="img/cajaaaaaa.jpeg" alt="Momentos 6" />
+        </div>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <div class="descripcion-actividad">
+        <h3>Pequeños mensajes que hacen grandes sonrisas</h3>
+        <p>
+            En esta actividad especial, llamada<strong> caja mágica</strong>, invitamos a nuestras estudiantes a escribir una frase que les gustaría recibir, un mensaje lleno de cariño, motivación o esperanza. Luego, esos mensajes fueron recogidos y entregados nuevamente, pero esta vez a otra persona, permitiendo que cada una recibiera las palabras de alguien más.
+
+            Fue una experiencia única y significativa, donde las estudiantes pudieron compartir frases llenas de cariño y, al mismo tiempo, recibir mensajes inesperados que alegraron su día y dejaron sonrisas en cada rostro.
+
+        </p>
+        <p>
+            El objetivo fue aprender el valor de dar y recibir mensajes lindos, descubrir cómo unas pocas palabras pueden alegrar el corazón y generar vínculos de apoyo y empatía. Fue un ejercicio sencillo pero muy significativo, que nos recordó que cuando compartimos cosas positivas, también las recibimos de vuelta en nuestra vida.
+        </p>
+    </div>
+</div>
+
+<!-- Script del tercer carrusel -->
+<script>
+    function initCarousel3() {
+        const carousel = document.getElementById('carousel3');
+        const images = carousel.querySelectorAll('img');
+
+        const carouselContainer = carousel.parentElement;
+        const prevBtn = carouselContainer.querySelector('.prev');
+        const nextBtn = carouselContainer.querySelector('.next');
+
+        let currentIndex = 0;
+        let autoSlideInterval;
+
+        function updateCarousel() {
+            const width = carousel.clientWidth;
+            carousel.style.transform = `translateX(-${currentIndex * width}px)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateCarousel();
+        }
+
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 4000);
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            startAutoSlide();
+        }
+
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            resetAutoSlide();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            resetAutoSlide();
+        });
+
+        window.addEventListener('resize', updateCarousel);
+
+        updateCarousel();
+        startAutoSlide();
+    }
+
+    window.addEventListener('load', initCarousel3);
+</script>
+
+
+    <!-- Footer -->
+<div class="container-fluid position-relative py-3" style="margin-top: 60px; background-color: #3a0066; color: #ffffff;">
+  <div class="row justify-content-center pt-3">
+    <div class="col-lg-8 text-center mb-4">
+      <a href="index.html" class="navbar-brand">
+        <h1 class="mb-2" style="color: #ffffff;"><span>RESETEA</span> TUS INSEGURIDADES</h1>
+      </a>
+      <p class="mb-2">Inspirando autoestima, amor propio y bienestar emocional a través de nuestras actividades.</p>
+      <p class="mb-2"><i class="fa fa-map-marker-alt mr-2"></i>Institución Educativa Colegio General Santander</p>
+      <p class="mb-3"><i class="fa fa-envelope mr-2"></i>superpoderosas.xtm@gmail.com</p>
+
+      <section class="text-center my-3">
+        <h3 class="mb-3">🌟 CONECTA CON NOSOTRAS</h3>
+        <a href="https://www.instagram.com/avanzando_con_amor" target="_blank" style="margin: 0 8px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="36">
+        </a>
+        <a href="https://whatsapp.com/channel/0029VbA9CHDF1YlY7JmPca2G" target="_blank" style="margin: 0 8px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="36">
+        </a>
+        <a href="https://www.tiktok.com/@avanzando_con_amor" target="_blank" style="margin: 0 8px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" width="36">
+        </a>
+      </section>
+    </div>
+  </div>
+
+  <div class="row text-center border-top pt-3" style="border-color: rgba(255, 255, 255, 0.1) !important;">
+    <div class="col-md-12">
+      <p class="m-0" style="font-weight: bold;">&copy; <a href="#" style="color: #ffffff; font-weight: bold;">Resetea Tus Inseguridades</a>. Todos los derechos reservados.</p>
+      <p class="m-0">Diseñado con amor por el equipo 💜</p>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JS Librerías -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
